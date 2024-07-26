@@ -1,0 +1,153 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    filter: blur(8px); /* Membuat background buram */
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 50px;
+    width: auto; /* Memastikan logo proporsional */
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+section {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+#home {
+    background: url('background.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home .content {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+#about {
+    background: #fff;
+    padding: 2rem;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#about img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+#projects .project {
+    background: #fff;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    max-width: 600px;
+}
+
+#projects h3 {
+    margin-bottom: 0.5rem;
+}
+
+#projects a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#skills {
+    background: #fff;
+    padding: 2rem;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills ul li {
+    display: inline-block;
+    margin: 0.5rem 1rem;
+    background: #eee;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+#contact {
+    background: #333;
+    color: #fff;
+    padding: 2rem;
+}
+
+#contact a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #222;
+    color: #fff;
+}
